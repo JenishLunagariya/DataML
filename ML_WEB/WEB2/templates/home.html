@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="{{url_for('static',filename = './homefile.css')}}">
+</head>
+<body>
+<div class = "login">
+	<h1>Predict Wine Quality</h1>
+	<!--Form to enter Values-->
+	<form action="{{url_for('predict')}}" method = "POST">
+		<ul>
+			<input type="number" step="any" name="fixed acidity" placeholder="Fixed Acidity" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any"
+			 name="volatile acidity" placeholder="Volatile Acidity" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any" name="citric acid" placeholder="Citric Acid" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any" name="residual sugar" placeholder="Residual Sugar" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any" name="chlorides" placeholder="Chlorides" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any" name="free sulfur dioxide" placeholder="Free Sulfur Dioxide" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any" name="total sulfur dioxide" placeholder="Total SUlfur Dioxide" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any" name="density" placeholder="Density" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any" name="ph" placeholder="pH" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any" name="sulphates" placeholder="Sulphates" required="required" /><br>
+		</ul>
+		<ul>
+			<input type="number" step="any" name="alcohol" placeholder="Alcohol" required="required" /><br>
+		</ul>
+
+		<ul>
+			<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+		</ul>
+		
+	</form>
+
+</div>
+</body>
+</html>
